@@ -8,7 +8,7 @@ import './AirdropEstimator.css';
 
 const AirdropEstimator = () => {
   const [projectedPoints, setProjectedPoints] = useState(50000);
-  const [airdropPercent, setAirdropPercent] = useState(10);
+  const [airdropPercent, setAirdropPercent] = useState(2);
   const [totalSupply, setTotalSupply] = useState(1000000000);
   const [tokenPrice, setTokenPrice] = useState(0.10);
   const [showBanner, setShowBanner] = useState(true);
@@ -109,18 +109,21 @@ const AirdropEstimator = () => {
                 <span>Airdrop Allocation %</span>
                 <span className="value-display">{airdropPercent}%</span>
               </label>
+               <p className="allocation-notice">
+                ✓ 2% of $LMTS supply confirmed for this season airdrop
+              </p>
               <input
                 type="range"
                 value={airdropPercent}
                 onChange={(e) => setAirdropPercent(Number(e.target.value))}
-                min="3"
-                max="25"
-                step="0.5"
+                min="2"
+                max="5"
+                step="0.1"
                 className="slider purple"
               />
               <div className="slider-labels">
-                <span>3%</span>
-                <span>25%</span>
+                <span>2%</span>
+                <span>5%</span>
               </div>
             </div>
 
@@ -134,13 +137,13 @@ const AirdropEstimator = () => {
                 value={tokenPrice}
                 onChange={(e) => setTokenPrice(Number(e.target.value))}
                 min="0.005"
-                max="0.50"
+                max="1.00"
                 step="0.005"
                 className="slider purple"
               />
               <div className="slider-labels">
                 <span>$0.005</span>
-                <span>$0.50</span>
+                <span>$1.00</span>
               </div>
             </div>
 
