@@ -1,1 +1,157 @@
+.join-banner {
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(236, 72, 153, 0.15));
+  border: 2px solid rgba(139, 92, 246, 0.3);
+  border-radius: 20px;
+  padding: 28px;
+  position: relative;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.banner-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.banner-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: rotate(90deg);
+}
+
+.banner-icon {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 16px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.banner-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 12px;
+  background: linear-gradient(135deg, #8b5cf6, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.banner-description {
+  text-align: center;
+  color: #c0c0c0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.banner-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: rgba(139, 92, 246, 0.1);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  border-radius: 10px;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.benefit-icon {
+  font-size: 1.3rem;
+}
+
+.banner-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.join-button {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.join-button.primary {
+  background: linear-gradient(135deg, #8b5cf6, #ec4899);
+  box-shadow: 0 4px 20px rgba(139, 92, 246, 0.4);
+}
+
+.join-button.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 30px rgba(139, 92, 246, 0.6);
+}
+
+.join-button.secondary {
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.3), rgba(236, 72, 153, 0.3));
+  border: 2px solid rgba(139, 92, 246, 0.5);
+  box-shadow: 0 4px 20px rgba(139, 92, 246, 0.2);
+}
+
+.join-button.secondary:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.4), rgba(236, 72, 153, 0.4));
+  box-shadow: 0 6px 30px rgba(139, 92, 246, 0.4);
+}
+
+@media (max-width: 640px) {
+  .join-banner {
+    padding: 24px 20px;
+  }
+
+  .banner-title {
+    font-size: 1.3rem;
+  }
+
+  .banner-description {
+    font-size: 0.85rem;
+  }
+
+  .benefit-item {
+    font-size: 0.85rem;
+  }
+
+  .join-button {
+    font-size: 0.95rem;
+    padding: 12px;
+  }
+}
 
