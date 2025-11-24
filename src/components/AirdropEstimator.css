@@ -160,6 +160,16 @@
   font-size: 1.1rem;
 }
 
+.allocation-notice {
+  font-size: 0.85rem;
+  color: #10b981;
+  background: rgba(16, 185, 129, 0.1);
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
 .number-input {
   width: 100%;
   padding: 14px 18px;
